@@ -1,0 +1,684 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----global css ------------------ start ------- */
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    border: none;
+    outline: none;
+}
+li{
+    list-style: none;
+}
+h2, h3, h4, h5, h6,
+p{
+    font-family: balobhai;
+}
+/* -------font-family------start------ */
+
+@font-face {
+    font-family: Lobster;
+    src: url(../font/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: balobhai;
+    src: url(../font/BalooBhai-Regular.ttf)
+}
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+
+/* font-family: 'Comfortaa', cursive; */
+
+/* -------font-family------Close------ */
+
+/* ----global css ------------------ close ------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----start------- Navigation ----------- */
+nav{
+    position: sticky;
+     top: 0px;
+    z-index: 100000000; 
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px black;
+}
+.main_nav{
+    max-width: 1260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.main_nav .nav_brand a{
+    font-family: Lobster;
+    color: rgb(5, 25, 63);
+    font-size: 30px;
+}
+.main_nav .nav_brand a span{
+    font-family: Lobster;
+    color: red;
+}
+.main_nav .menu ul li{
+    padding: 8px 20px;
+    display: inline-block;
+    transition: all .5s;
+    border-radius: 5px;
+}
+.main_nav .menu ul li:hover{
+    background-color: rgb(6, 23, 49);
+    
+}
+.main_nav .menu ul li:hover a{
+    color: #fff;
+
+}
+
+.main_nav .menu ul li a{
+    font-family: balobhai;
+    font-weight: normal;
+    color: rgb(63, 67, 68);
+}
+
+
+.top_search{
+    position: relative;
+}
+.top_search input{
+    font-family: Lobster;
+    padding: 4px 4 4px 10px;
+    border: none;
+    color: black;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: transparent;
+
+}
+.top_search button{
+    position: absolute;
+    right: 4px;
+    top: 2px;
+    background: none;
+
+}
+
+.Toggle{
+    display: none;
+}
+.top_search button i{
+    font-size: 16px;
+    cursor: pointer;
+
+}
+/* ----Close------- Navigation ----------- */
+
+
+
+
+
+
+
+
+
+
+
+/* ----open-------main body  ----------- */
+
+/* ----open-------main body 1 ----------- */
+
+.main_body_1{
+    background-image: url(../img/bg/bg-1.png);
+    max-width: 1260px;
+    margin: 0 auto;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    text-align: center;
+
+
+}
+.main_body_1_text{
+    margin-top: 150px;
+}
+.main_body_1_text h2,
+.main_body_1_text h1{
+    margin-top: 20px;
+    font-family: 'Lexend', sans-serif;
+    color: #fff;
+}
+.main_body_1_text h2{
+    font-size: 20px;
+}
+.main_body_1_text h1{
+    font-size: 30px;
+}
+.main_body_1 .main_body_1-btn{
+    padding: 8px 50px 12px 50px;
+    font-size: 30px;
+    font-family: Lobster;
+    letter-spacing: 5px;
+    border-radius: 15px;
+    color: red;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    transition: linear all .5s;
+}
+.main_body_1 .main_body_1-btn:hover{
+    background-color: transparent;
+    border: 1px solid red;
+}
+.main_body_1 .main_body_1-btn:active{
+    color: #fff;
+    background-color: black;
+
+}
+
+
+
+
+
+
+
+
+/* ----Close------- main body1 ----------- */
+
+
+
+/* ----open-------main body 2  ----------- */
+.main_body_2{
+    background-image: url(../img/bg/bg-2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 650px;
+    max-width: 1260px;
+    background-size: 65%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.owl-carousel {
+    max-width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+
+}
+.item{
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 4px 1px black;
+    border-bottom: .5px solid black;
+}
+.item h4{
+    text-align: center;
+    font: 35px;
+    text-transform: uppercase;
+    color: rgb(134, 15, 15);
+    font-weight: lighter;
+}
+.item p{
+    text-align: center;
+    font: 15px;
+    text-transform: uppercase;
+    color: rgb(12, 4, 41);
+    font-weight: lighter;
+}
+.item button{
+    height: 30px;
+    width: 140px;
+    margin: 20px auto;
+    background-color: transparent;
+    border: 1px solid black;
+    font-family: balobhai;
+}
+.item button:hover{
+    color: red;
+}
+
+.owl-nav{
+    position: absolute;
+    top: 0;
+    margin: -60px auto !important;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: black;
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: gray;
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
+
+
+
+/* ----Close------- main body 2 ----------- */
+
+/* --open-----------main_content -----------open-- */
+
+.main_content{
+    max-width: 1260px;
+    display: flex;
+    margin: 0 auto;
+}
+.main_site-content{
+    width: 70%;
+}
+.post-content{
+    padding: 1.5rem;
+    position: relative;
+    margin: 50px 0;
+}
+.post-content .post-image{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.post-content  .post-image div{
+    overflow: hidden;
+}
+
+.post-content  .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.post-content  .post-image .img:hover{
+    transform: scale(1.3);
+}
+.post-content .post-image .post-info{
+    width: 275px;
+    background-color: rgb(3, 210, 247);
+    padding: .5rem 1rem;
+    color: #363839;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: balobhai;
+    font-weight: normal;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.post-title a{
+    font-size: 1.5rem;
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: capitalize;
+    color:  #3f4954;
+    margin: 10px auto;
+}
+.post-title a:hover{
+    text-decoration: underline;
+}
+.post-title p{
+    font-size: 1rem;
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: capitalize;
+    color:  #5b6672;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
+
+.post-btn{
+    padding: .5rem 1rem;
+    background-color: rgb(3, 210, 247);
+    color: rgb(46, 46, 46);
+    margin: 10px auto;
+    font-family: balobhai;
+    font-weight: normal;
+}
+.site-content{
+    width: 30%;
+
+}
+.pagination{
+    padding: 1.5rem;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.pagination a{
+    margin: 0 3px;
+    padding: 6px 10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    transition: all .4s;
+    border: 1px solid red;
+}
+.pagination a:hover{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+}
+.category_aside{
+    padding: 1.5rem;
+    margin: 50px auto;
+    width: 200px;
+    display: block;
+    
+}
+.category-list{
+    width: 170px;
+}
+.category-list li{
+    padding: 6px 10px 5px 10px;
+    margin: 5px 0;
+    background-color: rgb(0, 166, 255);
+    border-radius: 10px;
+    color: rgb(244, 246, 247);
+    font-family: balobhai;
+    font-weight: normal;
+}
+.category-list li a{
+    color: rgb(244, 246, 247);
+    font-family: balobhai;
+    font-weight: normal;
+}
+.aside_popular_post{
+    padding: 1.5rem;
+}
+.post-content-2{
+    padding: 0;
+    margin-top: 10px;
+}
+.post-title-2{
+    margin: 10px 0;
+}
+.post-content-2 .post-image-2 .post-info-2{
+    width: 170px;
+    background-color: rgb(3, 247, 141);
+    padding: 5px;
+    color: #363839;
+    border-radius: 0 0 5px 0;
+    cursor: pointer;
+    font-family: balobhai;
+    font-weight: normal;
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+}
+.post-title-2 a{
+    font-size: 1rem;
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: capitalize;
+    color:  #3f4954;
+    margin: 10px auto;
+}
+.newsletter{
+    margin: 50px 0;
+}
+.newsletter h2{
+    font-family: balobhai;
+    font-weight: 100;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 20px 0;
+    color: rgb(0, 243, 0);
+
+}
+.form-element input{
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    outline: none;
+    border: 1px solid rgb(255, 47, 0);
+    font-family: balobhai;
+    font-weight: 100;
+    color: rgb(255, 0, 0);
+
+}
+.form-element button{
+    display: block;
+    width: 100%;
+    padding: 7px 0;
+    outline: none;
+    border: 1px solid rgb(255, 47, 0);
+    font-family: balobhai;
+    font-weight: 100;
+    color: #fff;
+    margin: 10px 0 ;
+    background-color: rgb(255, 0, 0);
+    transition: all .4s;
+
+}
+.form-element button:hover{
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+
+}
+
+.popular-tags h2{
+    font-family: balobhai;
+    font-weight: 100;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 20px 0;
+    color: rgb(162, 15, 15);
+
+}
+.tag{
+    padding: 5px 15px;
+    background-color: rgb(4, 255, 159);
+    color: black;
+    font-family: balobhai;
+    font-weight: 100;
+    margin: 4px;
+    display: inline-block;
+    border-radius: 20px;
+}
+/* --close-----------main_content -----------close-- */
+
+
+/* ----Close------- main body ----------- */
+
+
+/* - open--------------------------- Footer -----------------------open-----------------  */
+.footer{
+    max-width: 1260px;
+    background-color: rgba(0, 0, 0, 0.926);
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1260px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 50px 0;
+    flex-wrap: wrap;
+
+
+}
+.container div{
+    margin: 20px 0;
+    width: 250px;
+    text-align: center;
+}
+
+.container .about-us h2{
+    color: #fff;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.container .about-us p{
+    color: rgb(157, 157, 157);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    
+
+}
+.Locations h2{
+    color: #fff;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.follow h2{
+    color: #fff;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.container .follow  p{
+    color: rgb(157, 157, 157);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    
+
+}
+.container .follow  div{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    
+
+}
+.container .follow  div i{
+    margin: 0 0 0 5px !important;
+    
+
+}
+.up i{
+    font-size: 100px;
+    color: #fff;
+    transition: all .4s;
+}
+.up i:hover{
+    font-size: 100px;
+    color: rgb(53, 53, 53);
+    transition: all .4s;
+}
+.rights{
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+
+}
+.text-gray{
+    color: rgb(90, 141, 175);
+}
+.text-gray a{
+    color: #fff;
+}
+
+/* - CLOSE--------------------------- Footer -----------------------close-----------------  */
+
+
+
+
+
+
+
+
+
+/* ----open-------@media Query  ----------- */
+
+@media screen and (max-width:870px) {
+
+    /* toggle option */
+    .Toggle{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 10000;
+    }
+    .Toggle i{
+        font-size: 25px;
+        color: black;
+    }
+    .close{
+        display: none;
+    }
+/* toggle option */
+
+
+
+
+    .main_nav{
+        margin-top: 8px;
+        display: block;
+        overflow: hidden;
+        height: 47px;
+        transition: height .5s;
+    }
+    .menu{
+        margin-top: 20px;
+    }
+    .main_nav .menu ul li{
+        display: list-item;
+    }
+    .top_search{
+        margin-top: 40px;
+        width: 170px;
+    }
+    .top_search button{
+        top: 1px !important;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:750px) {
+
+    
+.main_content{
+    flex-direction: column;
+}
+.main_site-content{
+    width: 100%;
+}
+.site-content{
+    width: 100%;
+
+}
+}
+
+
+/* ----close-------@media Query  ----------- */
+
